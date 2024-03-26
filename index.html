@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC TAC TOE GAME</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css">
+
+</head>
+<body>
+    <section>
+    <h1 class="glowtext">TIC TAC TOE GAME</h1>
+    <div class="container1">
+<!-- Nine buttons -->
+        <div class="container">
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>
+            <button class="cell"></button>        
+        </div>
+
+<!-- View score div -->
+        <div class="showscore">
+            <b><p class="score">**SCORE**</p></b>
+            <p class="OScore"></p>
+            <p class="XScore"></p>
+        </div>
+        
+    </div>
+
+<!-- Showing winner or draw message -->
+    <p class="winlose"></p>
+
+<!-- Shows the players Turn -->
+    <p class="turn"></p>
+
+<!-- Div of new game and reset game button -->
+    <div class="btns">
+        <button id="newBtn">New Game</button>
+        <button id="resetBtn">Reset Game</button>
+    </div>
+
+<!-- After winning game animation is displayed -->
+        <!-- <canvas id="confetti"></canvas> -->
+    
+</section>
+<section>
+    <!-- <footer>
+        <div class="copyright">copyright &copy; AKshow</div>
+        <div class="icons">
+            <a href="http://www.linkedin.com"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer> -->
+
+    <footer>
+        <div class="footer-container">
+            <div class="copyright">copyright &copy; AKshow</div>
+            <div class="icons">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/" target="_blank"><i class='bx bxl-facebook'></i></a></li>
+                <li><a href="https://twitter.com/i/flow/login" target="_blank"><i class='bx bxl-twitter'></i></a></li>
+                <li><a href="https://www.instagram.com/" target="_blank"><i class='bx bxl-instagram'></i></a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class='bx bxl-linkedin'></i></a></li>
+            </ul>
+            </div>
+        </div>
+      </footer>
+      
+</section>
+    
+<!-- Animation library -->
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,354 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color: rgb(19, 20, 20);
+}
+
+/* heading style */
+h1{
+    text-align: center;
+    font-size: 350%;
+}
+
+.glowtext{
+    color:rgb(16, 16, 16);
+    text-shadow: 
+    0 0 5px rgb(255,255,255),
+    0 0 10px rgb(255,255,255),
+    0 0 20px rgb(255,255,255),
+    0 0 20px rgb(9,183,236),
+    0 0 20px rgb(15,145,231),
+    0 0 20px rgb(12,226,198),
+    0 0 20px rgb(4,247,247);
+}
+
+/* Style for container */
+.container1{
+    display: flex;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    width: 400px;
+    height: 400px;
+    margin: 0 auto;
+    margin-left: 38%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Style for buttons */
+.cell {
+    border: 2px solid #343131;
+    backdrop-filter: blur(50px);
+    background: transparent;
+    text-align: center;
+    font-size: 3em;
+    cursor: pointer;
+    height: 90%;
+    width: 90%;
+    border-radius: 10%;
+    /* position: fixed; */
+    align-items: center;
+    justify-content: center;
+    color: rgb(16, 18, 20);
+}
+
+.cell:hover{
+    border: 3px solid #c8ff00;
+}
+
+/* Style for Show score div */
+.showscore{
+    margin-right: 10%;
+    
+}
+
+.score{
+    font-size: 200%;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+.OScore{
+    font-size: 150%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f17de0;
+    padding-top: 0%;
+}
+
+.XScore{
+    font-size: 150%;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #f17de0;
+    padding-top: 0%;
+}
+
+/* Style for winner or draw message */
+.winlose{
+    color: #0e0d0d;
+    text-align: center;
+    font-size: 250%;
+}
+
+/* Style for players turn message */
+.turn{
+    color: #0e0d0d;
+    text-align: center;
+    font-size: 200%;
+}
+
+/* Style for new and reset buttons */
+.btns{
+    display: flex;
+}
+
+#newBtn{
+    margin-left: 42%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    border-radius: 25%;
+    cursor: pointer;
+    
+}
+
+#resetBtn{
+    margin-left: 4%;
+    padding: 1%;
+    background-color: black;
+    color: white;
+    border-radius: 25%;
+    cursor: pointer;
+}
+
+#newBtn:hover, #resetBtn:hover{
+    background-color: #f17de0;
+    box-shadow: 0 0 5px rgb(16, 16, 16),
+    0 0 10px rgb(48, 44, 44),
+    0 0 20px rgb(102, 91, 91),
+    0 0 20px rgb(9,183,236),
+    0 0 20px rgb(15,145,231),
+    0 0 20px rgb(12,226,198),
+    0 0 20px rgb(4,247,247);
+}
+
+/* footer{
+    background-color:#333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+.icons {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 24px;
+}
+.icons a:hover{
+    color: #ff0000;
+} */
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .footer-container{
+    display: flex;
+  }
+  .copyright{
+    margin-left: 47%;
+
+  }
+  .icons {
+    max-width: 1200px;
+    margin-left:25%;
+    text-align: center;
+  }
+  
+  .social-icons {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .social-icons li {
+    display: inline-block;
+    margin-right: 15px;
+  }
+  
+  .social-icons li:last-child {
+    margin-right: 0;
+  }
+  
+  .social-icons a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    line-height: 50px;
+    transition: background-color 0.3s ease;
+    color: #ff0000;
+  }
+  
+  .social-icons a:hover {
+    background-color: #7fecff;
+  }
+  
+  .bx {
+    font-size: 24px; /* Adjust the size of the icons as needed */
+  }
+  
+
+  
+
+@media screen and (max-width: 1279px) {
+    .footer-container{
+        display: inline;
+    }
+    .icons{
+        margin-left: 5%;
+    }
+}
+
+@media screen and (max-width: 938px) {
+    .container1 {
+        display:inline;
+    }
+    .container{
+        margin-left: 25%;
+    }
+    .showscore{
+        margin-left: 35%;
+    }
+    #newBtn{
+        margin-left: 33%;
+    }
+    #resetBtn{
+        margin-left: 10%;
+    }
+    .turn{
+        text-align: center;
+        justify-content: center;
+        margin-right: 2%;
+    }
+    .icons{
+        text-align: center;
+
+    }
+}
+
+
+@media screen and (max-width: 895px) {
+    .footer-container{
+        text-align: center;
+    }
+    .icons{
+        text-align: center;
+    }
+    .copyright{
+        margin-left: 5%;
+
+    }
+}
+
+@media screen and (max-width: 614px) {
+    .container{
+        margin-left: 17%;
+
+    }
+}
+@media screen and (max-width: 599px) {
+    .container{
+        margin-left: 12%;
+
+    }
+}
+
+@media screen and (max-width: 485px) {
+    .container{
+        margin-left: 8%;
+    }
+}
+
+@media screen and (max-width: 433px) {
+    footer{
+        width: 110%;
+    }
+}
+
+@media screen and (max-width: 389px) {
+    .glowtext{
+        margin-left: 17%;
+
+    }
+    footer{
+        width: 120%;
+        padding: 20px 0;
+
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .glowtext{
+        margin-left: 17%;
+
+    }
+    footer{
+        width: 130%;
+    }
+}
+@media screen and (max-width: 307px) {
+    .glowtext{
+        margin-left: 50%;
+
+    }
+    footer{
+        width: 150%;
+    }
+}
+
+
+
+.glow-animation {
+    animation: glowing 1.5s infinite alternate;
+}
+
+.glowturns-animation {
+    animation: glowturns 1.5s infinite alternate;
+}
+
+/* Glow for O and X player */
+@keyframes glowturns{
+    0% {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #e7e370, 0 0 30px #decd4e, 0 0 40px #fff83bd8, 0 0 70px #ffd549, 0 0 80px #fffb0e;
+    }
+    100% {
+        text-shadow: 0 0 10px #ffffff, 0 0 20px #e7e370, 0 0 30px #decd4e, 0 0 40px #fff83bd8, 0 0 70px #ffd549, 0 0 80px #fffb0e;
+    }
+}
+
+/* Winnner or draw message */
+@keyframes glowing {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #ff00de, 0 0 70px #ff00de, 0 0 80px #ff00de, 0 0 100px #ff00de, 0 0 150px #ff00de;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #ff00de, 0 0 80px #ff00de, 0 0 90px #ff00de, 0 0 110px #ff00de, 0 0 150px #ff00de;
+    }
+}
+
+/* Score div */
+@keyframes glow {
+    0% {
+        text-shadow: 0 0 10px #ff0000, 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000;
+    }
+    100% {
+        text-shadow: 0 0 20px #ff0000, 0 0 30px #ff0000, 0 0 40px #ff0000, 0 0 50px #ff0000, 0 0 60px #ff0000, 0 0 70px #ff0000, 0 0 80px #ff0000;
+    }
+}
